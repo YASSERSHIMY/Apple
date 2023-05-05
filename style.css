@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+body{
+    height: fit-content;
+}
+header{
+    height: 80px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.div-logo,
+.nav-links,
+.div-card{
+    display: flex;
+}
+.div-logo{
+    flex: 1;
+}
+.div-logo img{
+    height:50px;
+    cursor: pointer;
+}
+header nav{
+    flex: 2;
+}
+.nav-links{
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+.div-card{
+    justify-content: flex-end;
+    flex: 1;
+}
+.div-card img{
+    height: 50px;
+    cursor: pointer;
+}
+main{
+    width:90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 20px;
+}
+.main-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.div-about{
+    height: fit-content;
+    width: 50%;
+}
+.div-about-device :nth-child(1){
+    width: 100%;
+}
+
+.div-inf-device{
+    margin-top: 30px;
+    text-align: center;
+}
+.div-inf-device :nth-child(1){
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Unbounded', cursive;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg,#FF39A7 0,#E265AF 16%,#9F5DE6 33%,#655BE2 50%,#9F5DE6 67%,#E265AF 84%,#FF39A7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.div-inf-device :nth-child(2){
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.div-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.div-btn :nth-child(1){
+    margin-right: 80px;
+}
+.btn{
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.1764805882;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: 'Poppins', sans-serif;
+    min-width: 28px;
+    padding: 10px 16px;
+    border-radius: 500px;
+    background: #0071e3;
+    color: #fff;
+}
+.div-iphone-image{
+    width: 500px;
+}
+.div-iphone-image img{
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0px 5px 5px black);
+}
+.main-section img :nth-child(1){
+    position: absolute;
+    top: 0px;
+}
+.image-big-circle,
+.image-mid-circle,
+.image-small-circle{
+    position: absolute;
+    z-index: -1;
+}
+.image-big-circle{
+    top:0px;
+    right: 0px;
+    opacity: 0.3;
+    height: 88%;
+}
+.image-mid-circle{
+    top: 400px;
+    right: 650px;
+    opacity: 0.4;
+}
+.image-small-circle{
+    top: 650px;
+    right: 1000px;
+    opacity: 0.5;
+}
+.btn-header{
+    color: black;
+    font-weight: 600;   
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+@media screen and ( max-width:1300px ) {
+    .main-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-section{
+        height: fit-content;
+    }
+    .div-about{
+        width: 90%;
+        margin-top: 50px;
+    }
+    .div-iphone-image{
+        margin-top: 50px;
+        min-height: 40vh;
+        width: 40vh;
+    }
+}
+@media screen and (max-width: 600px){
+    header{
+        width: 100%;
+    }
+    .div-logo{
+        margin-left: 10px;
+    }
+    header nav{
+        flex: 3;   
+    }
+    .nav-links{
+        font-size: 16px;
+    }
+    .div-card{
+        margin-right: 10px;
+    }
+    main{
+        width: 100%;
+    }
+    .div-about{
+        width: 90%;
+        height: fit-content;
+    }
+    .div-about-device img{
+        width: 100%;
+    }
+    .div-iphone-image img{
+        width:100%;
+    }
+    .copyright{
+        margin-top: 140px;
+    }
+    .image-big-circle,.image-mid-circle,.image-small-circle{
+        display: none;
+    }
+}
